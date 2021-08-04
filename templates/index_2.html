@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <center>
+        <div style="background-color:lightgoldenrodyellow; color:black; padding:10px; width:600px; height:300px">
+        
+        <h1>Welcome to the Ticket Viewer</h1>
+        <br>
+            <center>
+        <p> Enter your credentials <br>
+          1. Enter "A" to view all tickets<br>
+        2. Enter ticket number to view a single ticket<br>
+            3. Enter "Q" to exit the application
+        </p>
+                </center>
+      <form action="{{ url_for("gfg")}}" method="post">
+          <label for="username">Enter your username:</label>
+          <input type="text" id="username" name="user" placeholder="Enter the username"><br>
+          
+          
+          
+          <label for="pass">Enter your passwork:</label>
+          <input type="password" id="pass" name="p" placeholder="Enter the password"> <br>
+          
+          <label for="option">Enter input:</label>
+          <input type="text" id="option" name="opt" placeholder="Enter the value">
+          <button type="submit">View Ticket</button>
+          <br>
+          <br>
+          <br> <br>
+            </div>
+            </center>
+          </body>
+      </html>

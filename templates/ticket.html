@@ -1,0 +1,15 @@
+<!doctype html>
+<body style="background-color:#D3D3D3; font-family: Optima;">
+    <center>
+    <b><font style='color:#0C2C90; font-size: 300; font-family:Optima'>Requested Ticket</font></b>
+  <table border = 3>
+    {% for key, value in ticket_d.items() %}
+    <tr>
+       <th> {{ key }} </th>
+       <td> {{ value }} </td>
+    </tr>
+    {% endfor %}
+ </table>
+        <a href="index_2.html"><button> Main Menu</button></a>
+        </center>
+</body>
